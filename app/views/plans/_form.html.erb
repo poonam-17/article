@@ -1,0 +1,21 @@
+
+<%= form_with model: @plan, local: true do |f| %>
+
+<p>
+<%=f.label :name %>
+<%= f.text_field :name %>
+</p>
+
+<p>
+<%=f.label :price %>
+<%=f.text_area :price %>
+</p>
+
+<p>
+<%=f.submit %>
+</p>
+ 
+ <% end %>
+<%= link_to 'Back', plans_path %>
+
+
